@@ -1,0 +1,872 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local namelessadmin = Instance.new("TextButton")
+local infiniteyield = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local FLINGGUI = Instance.new("TextButton")
+local Lightsaber = Instance.new("TextButton")
+local Johndoe = Instance.new("TextButton")
+local Sonic = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local GaleFighter = Instance.new("TextButton")
+local _4nn1gui = Instance.new("TextButton")
+local Thomas = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.099765256, 0, 0.160493821, 0)
+ImageLabel.Size = UDim2.new(0, 291, 0, 347)
+ImageLabel.Image = "rbxassetid://122531609231198"
+ImageLabel.ImageTransparency = 0.600
+
+namelessadmin.Name = "nameless admin"
+namelessadmin.Parent = ImageLabel
+namelessadmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+namelessadmin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+namelessadmin.BorderSizePixel = 0
+namelessadmin.Position = UDim2.new(0.0260595381, 0, 0.113601595, 0)
+namelessadmin.Size = UDim2.new(0, 123, 0, 50)
+namelessadmin.Font = Enum.Font.SourceSans
+namelessadmin.Text = "nameless admin"
+namelessadmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+namelessadmin.TextSize = 14.000
+
+infiniteyield.Name = "infinite yield"
+infiniteyield.Parent = ImageLabel
+infiniteyield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infiniteyield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infiniteyield.BorderSizePixel = 0
+infiniteyield.Position = UDim2.new(0.557608604, 0, 0.113154784, 0)
+infiniteyield.Size = UDim2.new(0, 105, 0, 50)
+infiniteyield.Font = Enum.Font.SourceSans
+infiniteyield.Text = "Infinite Yield"
+infiniteyield.TextColor3 = Color3.fromRGB(0, 0, 0)
+infiniteyield.TextSize = 14.000
+
+TextLabel.Parent = ImageLabel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.999638259, 0)
+TextLabel.Size = UDim2.new(0, 291, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made By Epicdude"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+FLINGGUI.Name = "FLING GUI"
+FLINGGUI.Parent = ImageLabel
+FLINGGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FLINGGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FLINGGUI.BorderSizePixel = 0
+FLINGGUI.Position = UDim2.new(0.0255069807, 0, 0.319321394, 0)
+FLINGGUI.Size = UDim2.new(0, 123, 0, 41)
+FLINGGUI.Font = Enum.Font.SourceSans
+FLINGGUI.Text = "Fling gui"
+FLINGGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+FLINGGUI.TextSize = 14.000
+
+Lightsaber.Name = "Lightsaber"
+Lightsaber.Parent = ImageLabel
+Lightsaber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lightsaber.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lightsaber.BorderSizePixel = 0
+Lightsaber.Position = UDim2.new(0.0255070329, 0, 0.489350259, 0)
+Lightsaber.Size = UDim2.new(0, 181, 0, 41)
+Lightsaber.Font = Enum.Font.SourceSans
+Lightsaber.Text = "Lightsaber (execute fling gui first)"
+Lightsaber.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lightsaber.TextSize = 14.000
+
+Johndoe.Name = "John doe"
+Johndoe.Parent = ImageLabel
+Johndoe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Johndoe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Johndoe.BorderSizePixel = 0
+Johndoe.Position = UDim2.new(0.52378881, 0, 0.319321424, 0)
+Johndoe.Size = UDim2.new(0, 123, 0, 41)
+Johndoe.Font = Enum.Font.SourceSans
+Johndoe.Text = "Johndoe"
+Johndoe.TextColor3 = Color3.fromRGB(0, 0, 0)
+Johndoe.TextSize = 14.000
+
+Sonic.Name = "Sonic"
+Sonic.Parent = ImageLabel
+Sonic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sonic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sonic.BorderSizePixel = 0
+Sonic.Position = UDim2.new(0.522336781, 0, 0.786743522, 0)
+Sonic.Size = UDim2.new(0, 91, 0, 45)
+Sonic.Font = Enum.Font.SourceSans
+Sonic.Text = "f3x decal spam"
+Sonic.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sonic.TextSize = 14.000
+
+TextLabel_2.Parent = ImageLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, -0.112391934, 0)
+TextLabel_2.Size = UDim2.new(0, 291, 0, 39)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Team just0 Gui FE"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+GaleFighter.Name = "Gale Fighter"
+GaleFighter.Parent = ImageLabel
+GaleFighter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GaleFighter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GaleFighter.BorderSizePixel = 0
+GaleFighter.Position = UDim2.new(0.0682566017, 0, 0.786025941, 0)
+GaleFighter.Size = UDim2.new(0, 89, 0, 36)
+GaleFighter.Font = Enum.Font.SourceSans
+GaleFighter.Text = "f3x skybox"
+GaleFighter.TextColor3 = Color3.fromRGB(0, 0, 0)
+GaleFighter.TextSize = 14.000
+
+_4nn1gui.Name = "4nn1 gui"
+_4nn1gui.Parent = ImageLabel
+_4nn1gui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_4nn1gui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_4nn1gui.BorderSizePixel = 0
+_4nn1gui.Position = UDim2.new(0.0228570886, 0, 0.631503403, 0)
+_4nn1gui.Size = UDim2.new(0, 117, 0, 54)
+_4nn1gui.Font = Enum.Font.SourceSans
+_4nn1gui.Text = "epicdudes 4nn1 gui"
+_4nn1gui.TextColor3 = Color3.fromRGB(0, 0, 0)
+_4nn1gui.TextSize = 14.000
+
+Thomas.Name = "Thomas"
+Thomas.Parent = ImageLabel
+Thomas.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Thomas.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Thomas.BorderSizePixel = 0
+Thomas.Position = UDim2.new(0.670103073, 0, 0.487031698, 0)
+Thomas.Size = UDim2.new(0, 80, 0, 37)
+Thomas.Font = Enum.Font.SourceSans
+Thomas.Text = "Thomas"
+Thomas.TextColor3 = Color3.fromRGB(0, 0, 0)
+Thomas.TextSize = 14.000
+
+-- Scripts:
+
+local function YTPIE_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local UserInputService = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	local leadFrame = Instance.new('Frame') do
+		leadFrame.AnchorPoint = frame.AnchorPoint
+		leadFrame.Position = frame.Position
+		leadFrame.Size = frame.Size
+		leadFrame.Name = `Lead {frame.Name}`
+		leadFrame.Visible = false
+		leadFrame.Parent = frame.Parent
+	end
+	
+	local screenGui = frame:FindFirstAncestorOfClass('ScreenGui')
+	
+	local inputChanged = nil
+	local inputEnded = nil
+	
+	local function getBoundsRelations(guiObject : GuiObject)
+		local bounds = screenGui.AbsoluteSize
+		local topLeft = screenGui.IgnoreGuiInset and guiObject.AbsolutePosition + Vector2.new(0, 36) or guiObject.AbsolutePosition
+		local bottomRight = topLeft + guiObject.AbsoluteSize
+	
+		local boundRelations = {
+			Top = topLeft.Y < 0 and math.abs(topLeft.Y) or nil,
+			Left = topLeft.X < 0 and math.abs(topLeft.X) or nil,
+			Right = bottomRight.X > bounds.X and math.abs(bottomRight.X - bounds.X) or nil,
+			Bottom = bottomRight.Y > bounds.Y and math.abs(bottomRight.Y - bounds.Y) or nil,
+		}
+	
+		return (not boundRelations.Top
+			and not boundRelations.Bottom
+			and not boundRelations.Left
+			and not boundRelations.Right), boundRelations
+	end
+	
+	frame.InputBegan:Connect(function(inputObject : InputObject)
+		if inputObject.UserInputType == Enum.UserInputType.MouseButton1 then
+	
+			local lastMousePosition = UserInputService:GetMouseLocation()
+			local goalPosition = frame.Position
+	
+			inputChanged = UserInputService.InputChanged:Connect(function(input : InputObject, event : boolean)
+				if input.UserInputType == Enum.UserInputType.MouseMovement then
+					local currentMousePosition = UserInputService:GetMouseLocation()
+					local mouseDelta = currentMousePosition - lastMousePosition
+	
+					goalPosition += UDim2.fromOffset(mouseDelta.X, mouseDelta.Y)
+	
+					leadFrame.Position = goalPosition
+	
+					local isInBounds, relations = getBoundsRelations(leadFrame)
+	
+					if not isInBounds then
+						local x = (relations.Left or 0) - (relations.Right or 0)
+						local y = (relations.Top or 0) - (relations.Bottom or 0)
+	
+						goalPosition += UDim2.fromOffset(x, y)
+					end
+	
+					frame.Position = goalPosition
+					lastMousePosition = currentMousePosition
+				end
+			end)
+	
+			inputEnded = frame.InputEnded:Connect(function(input : InputObject)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 then
+					inputChanged:Disconnect()
+					inputChanged = nil
+	
+					inputEnded:Disconnect()
+					inputEnded = nil
+				end
+			end)
+		end
+	end)
+	
+	frame.Destroying:Once(function()
+	
+		leadFrame = leadFrame:Destroy()
+	
+		if inputChanged  then
+			inputChanged:Disconnect()
+			inputChanged = nil
+		end
+	
+		if inputEnded then
+			inputEnded:Disconnect()
+			inputEnded = nil
+		end
+	end)
+end
+coroutine.wrap(YTPIE_fake_script)()
+local function NCTF_fake_script() -- namelessadmin.Script 
+	local script = Instance.new('Script', namelessadmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/FD2Team/Nameless-Admin-No-Byfron-Kick/main/Source",true))()
+	end)
+end
+coroutine.wrap(NCTF_fake_script)()
+local function QRLV_fake_script() -- infiniteyield.Script 
+	local script = Instance.new('Script', infiniteyield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(QRLV_fake_script)()
+local function GKIJMAY_fake_script() -- FLINGGUI.Script 
+	local script = Instance.new('Script', FLINGGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+	end)
+end
+coroutine.wrap(GKIJMAY_fake_script)()
+local function RBXTOZT_fake_script() -- Lightsaber.Script 
+	local script = Instance.new('Script', Lightsaber)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Coolman19181/Lightsaber/main/Lightsaber%20Script'),true))()
+	end)
+end
+coroutine.wrap(RBXTOZT_fake_script)()
+local function FRFKOKY_fake_script() -- Johndoe.Script 
+	local script = Instance.new('Script', Johndoe)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Coolman19181/Wkkskakakadoe/main/26c3b0f7.txt'),true))()
+	end)
+end
+coroutine.wrap(FRFKOKY_fake_script)()
+local function WGLEDI_fake_script() -- Sonic.Script 
+	local script = Instance.new('Script', Sonic)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		spam("126536807953546")
+
+-----------
+
+	end)
+end
+coroutine.wrap(WGLEDI_fake_script)()
+local function TLZX_fake_script() -- GaleFighter.Script 
+	local script = Instance.new('Script', GaleFighter)
+
+	script.Parent.MouseButton1Click:Connect(function()
+--mi pan
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Sky(id)
+			e = char.HumanoidRootPart.CFrame.x
+			f = char.HumanoidRootPart.CFrame.y
+			g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					--spawn(function()
+					SetName(v,"Sky")
+					AddMesh(v)
+					--end)
+					--spawn(function()
+					SetMesh(v,"8006679977")
+					SetTexture(v,id)
+					--end)
+					MeshResize(v,Vector3.new(50,50,50))
+					SetLocked(v,true)
+				end
+			end
+		end
+		Sky("126536807953546")
+	end)
+end
+coroutine.wrap(TLZX_fake_script)()
+local function BBFZKUA_fake_script() -- _4nn1gui.Script 
+	local script = Instance.new('Script', _4nn1gui)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Coolman19181/my-4enen1-gui-lel/main/gui2lua%20%239.lua",true))()
+	end)
+end
+coroutine.wrap(BBFZKUA_fake_script)()
+local function ITOXBBT_fake_script() -- Thomas.Script 
+	local script = Instance.new('Script', Thomas)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Coolman19181/Lightsaber/main/Lightsaber%20Script'),true))()
+	end)
+end
+coroutine.wrap(ITOXBBT_fake_script)()
